@@ -1,0 +1,69 @@
+:root {
+    --font: "Poppins", sans-serif;
+
+    --clr-neut-lg: hsl(0, 0%, 98%);
+    --clr-neut-gb: hsl(229, 6%, 66%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--clr-neut-lg);
+    font-family: var(--font);
+    font-size: 15px;
+    color: var(--clr-neut-gb);
+}
+
+.container {
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+header {
+    margin: 25px 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cols {
+    margin: 0 25px; 
+    flex: 1;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    text-align: right;
+    border-radius: 5px;
+}
+
+.card1 {
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+
+
+.textbox {
+    text-align: left;
+}
+
+@media only screen and (max-width: 500px) {
+
+    main {
+        flex-direction: column;
+    }
+
+
+}

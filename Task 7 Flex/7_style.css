@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+header{
+    display: flex;
+    background-color: aliceblue;
+    min-height: 4rem;
+    gap: 3px;
+}
+
+.site-title{
+    background: yellow;
+    flex: 1;
+}
+header nav{
+    flex:1;
+
+}
+
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    height:100%;
+    gap: 3px;
+    
+}
+
+header nav li{
+    background-color: pink;
+    flex: 1;
+}
+
+main section{
+    width: 75%;
+}
+
+main aside{
+    width: 25%;
+}
+main{
+    display: flex;
+    gap: 3px;
+}
+
+.section-post-container {
+    display: flex;
+    min-height: 17rem;
+    gap: 3px;
+}
+
+.post-title{
+    background-color: gray;
+    
+    height: 4rem;
+
+}
+
+.post-meta{
+    width: 25%;
+    background: lightblue;
+}
+
+.main-content-container{
+    width: 75%;
+}
+.main-content{
+    height: calc(100%/3);
+    background: blueviolet;
+}
+.main-content-image{
+    background-color: yellow;
+    height: calc(2*100%/3);
+}
+.side-bar{
+    background: orange;
+    height: calc(100%/3);
+}
+
+.ads{
+    height: calc(100%/3);
+    background-color: green;
+}
+.other{
+    height: calc(100%/3);
+    background-color: magenta;
+}
+footer{
+    background-color: brown;
+    min-height: 4rem;
+}
+
+.brd{ /* Short for border. I added this to the class to make the boarders */
+     margin-block: 3px;
+}
+/* This is unfinished because of time constraints */

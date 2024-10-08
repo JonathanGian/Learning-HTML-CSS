@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Task 4</title>
+</head>
+<body>
+    <h1>Form Elements</h1>
+
+    <table>
+
+        <thead>
+        <tr>
+            <th>Description</th>
+            <th>Input Example</th>
+            <th>Notes</th>
+        </tr>
+
+       </thead>
+       
+       <tbody>
+       
+       <!-- Start of text input on table -->
+        <tr>
+            <td>type="text"</td>
+            <td><label for="name"> First name:</label><!-- This makes it so if you click the text, it will automatically select the input box -->
+                <input type="text" id="name">
+            </td>
+            <td>Defines a single-line text field that a user can enter text into.</td>
+            
+        </tr>
+
+     <!--    <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>              This makes a single row for a table     -->
+<!-- Start of checkbox on table -->
+        <tr>
+            <td>type="checkbox"</td>
+            <td>
+                <input type="checkbox" name="first"> First choice<br>
+                <input type="checkbox" name="first"> Second choice<br>
+                <input type="checkbox" name="first"> Third choice<br>
+            </td>
+            <td>Checkbox text is placed after input tag. You can also replace text with label.</td>
+        </tr>
+<!-- Start of Radio on table -->
+        <tr>
+            <td>type="radio"</td>
+            <td><input type="radio" name="radio" id="Gaga"> Radio Gaga<br>
+                <input type="radio" name="radio" id="Gugu"> Radio Gugu<br>
+            </td>
+            <td>Radio buttons allow you only one option.</td>
+        </tr>
+<!-- start of month on table -->
+        <tr>
+            <td>type="month"</td>
+            <td><input type="month" name="bday"></td>
+            <td>Month creates a month and year control.</td>
+        </tr>
+
+
+        <tr>
+            <td>Select example</td>
+            <td><select name="songs">
+                <option value="default">Select a song
+                </option>
+            <option value="Bohemian">Bohemian Rhapsody
+            </option>
+            <option value="disco">Disco
+            </option>
+            <option value="killer">Killer Queen
+            </option>
+            
+            </select></td>
+            <td>You can creat a drop down list, allowing the user one choice<br> Adding size and multiple attributes will allow the user to pick many.</td>
+        </tr>  
+    </tbody>
+
+    </table>
+
+
+
+
+
+</body>
+</html>

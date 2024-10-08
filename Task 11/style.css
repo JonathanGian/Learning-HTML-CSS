@@ -1,0 +1,77 @@
+:root{
+    --font: "Oswald,sans-serif";
+    --neutral-col: cornsilk;
+    --second-col: steelblue;
+    --dark-col: #333;
+    --light-col: #fff;
+    --basic-shadow: 5px 5px 5px var(--dark-col)
+
+}
+
+body{
+    font-family: var(--font);
+    background: var(--neutral-col);
+    color: var(--light-col);
+    
+    
+}
+
+.round{
+    margin: 50px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--second-col);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px var(--dark-col), 0px 0px 6px var(--dark-col) inset;
+    transition: height 3s 1s ease-in,width 3s ease-out;
+}
+
+.round:hover{
+    height: 400px;
+    width: 400px;
+
+}
+.square{
+    margin: 50px auto;
+    width: 150px;
+    height: 150px;
+    background: teal;
+    border-bottom: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 2s;
+}
+
+.square:hover{
+    transform: rotate(180deg);
+    background-color: var(--second-col);
+    border-top: 5px solid black;
+    border-bottom: 0;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
+.item{
+    
+    min-height: 200px;
+    font-size: 3rem;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 2px var(--neutral-col),var(--basic-shadow);
+    transition: all 2s ease-in-out;
+}
+
+.item:hover{
+    box-shadow: 0 0 300px var(--dark-col) inset;
+    background: var(--second-col);
+}

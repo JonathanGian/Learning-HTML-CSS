@@ -1,0 +1,94 @@
+:root {
+    --primary-color: lightgreen;
+    --font: Verdana,sans-serif;
+    --blue-color: lightblue;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--primary-color);
+    font-family: var(--font);
+}
+.one{
+    display: grid;
+    max-width: 1000px;
+    
+    background: gray;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 100px 100px 100px 100px;
+    gap: 1rem;
+    margin: 50px auto;
+}
+.item{
+    background: firebrick;
+}
+.item:first-child{
+    background: green;
+    grid-column: 1 / span 4;/* You can also use Lines: 1 / 5 does the same thing */
+}
+.item:nth-child(2) {
+    background: var(--blue-color);
+    grid-column: 1 / span 1;
+    grid-row: 2 /  span 2;/* or 2/ 4  */
+}
+.item:last-child {
+    background: yellow;
+    grid-column: 1 / span 4;
+}
+
+.two {
+    display: grid;
+    max-width:  1000px;
+    grid-template-areas: 
+    "whatever whatever whatever whatever whatever"
+    "left main main main right"   
+    "left main main main right"   
+    "left main main main right"
+    "footer footer footer footer footer";
+
+    margin: 50px auto;
+    gap: 0.4rem;
+    grid-auto-rows:1fr ;
+}
+.header{
+    grid-area: whatever;
+    background: darkorange;
+    min-height: 100px;
+    padding: 1rem;
+}
+.left{
+    grid-area: left;
+    background: firebrick;
+    padding: 1rem;    
+}
+.main{
+    grid-area: main;
+    background: aqua;
+    pad: 1rem;
+}
+.aside{
+    grid-area: right;
+    background: gold;
+    padding: 1rem;
+}
+.footer{
+    grid-area: footer;
+    background: green;
+    padding: 1rem;
+}
+
+.three{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(10rem, 100%), 1fr));
+    grid-gap: 1rem;
+    grid-auto-rows: 10rem;
+}
+.box{
+    background: var(--blue-color);
+    padding: 1rem;
+}

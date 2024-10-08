@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+
+}
+
+header {
+    display: flex;
+    color: white;
+    background: #333;
+    padding: 1rem;
+    align-items: center;
+}
+
+.logo {
+    flex: 3;
+}
+
+ul {
+    flex 1;
+    display: flex;
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+ a:hover {
+border-bottom: 6px solid rgb(57, 82, 57);
+}
+/* Messing around with the before thingyß
+
+  a:hover::before{
+    border-top: 6px solid green;
+    content: "sdsd";
+    background-color: blue;
+} */
+/* We added this: Start 
+*/
+/* Unvisited link shows up as white. Visited link shows up as purple
+*/
+a:visited{
+    color: purple;
+}
+/* Color when you click a link */
+a:active{
+    color: gray
+}
+/*             End                      */
+main {
+    display: flex;
+    height: 100vh;
+}
+
+aside {
+    background: rgb(57, 82, 57);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+}
+
+section {
+    background: rgb(139, 172, 145);
+    flex: 4;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    height: 100vh;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background: chocolate;
+    color: white;
+    border-radius: 5px;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  And this  */
+/* Changes the properties of the first child of the asides box class */
+aside .box:first-child{
+    background: cyan;
+}
+/* Changes the properties of the FIRST CHILD of the sections box class */
+section .box:first-child{
+    background: black;
+}
+/* Changes the properties of box 5.(Replace the number 5 with a  number to change which child you are changing) */
+section :nth-child(5){
+    background-color: blue;
+}
+
+/* Try turning these on and off to see how they work. you can add text after the fact so you dont have to go back into the html to add it. 
+ 
+ 
+li:last-child::after{
+background-color: black;
+content: "hello";
+}
+ 
+.box::after{
+    content: "This is a test";
+    font-size: 10px;
+    margin: 20px;
+    width: 15px;
+}
+
+.box::before{
+    content: "This shows up here";
+    font-size: 8px;
+    padding: 20px;
+}
+ */

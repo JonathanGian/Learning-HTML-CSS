@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color:wheat;
+    color: blueviolet;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+header {
+    background-color: black;
+    text-align: left;
+   
+}
+
+ul {
+    list-style-type: none
+}
+li {
+    display: inline;
+    display: inline-block;
+    color: cornflowerblue;
+}
+li a {
+    margin: 30px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+li a:hover {
+    color: cyan;
+}
+
+
+.banner {
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.banner h1{
+    margin-bottom: 30px;
+}
+section {
+    padding: 30px;
+}
+
+section img {
+    max-width: 15%;
+    margin: 15px 0; /* gives a bit of space around the picture rather than using padding which will effect the size of the picture*/
+    
+}
+section h1 {
+    margin-bottom: 15px;
+}
+
+
+section p{
+    margin-bottom: 15px;
+}
+/* 
+descendantselector (space)
+
+section p  {
+    background-color: blue;
+}
+
+    general sibling selector (~)
+
+section ~ p  {
+    background-color: blue;
+}
+
+  childselector (>)
+
+ section > p  {
+    background-color: blue;
+} 
+
+adjacent sibling selector 
+
+section + p  {
+    background-color: blue;
+} */
+ 
+
+table {
+    border-collapse: collapse; 
+    color: white;
+ }
+
+ thead{
+    background: orange;
+    color: white;
+ }
+/* Changes the table*/
+td, th {    /*use a comma to list multiple things you want to change the characteristics of*/
+    text-align: left;
+    width: 200px;
+    padding: 15px;
+    border-style: double;
+    border-radius: 10px;/*rounds corners */
+    border: 1px solid white;
+
+}
+
+td {
+    color: rgb(0, 0, 0);
+}
+
+.odd{
+    background: rgb(152, 119, 77);
+}

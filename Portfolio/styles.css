@@ -1,0 +1,125 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0A192F; /* Dark navy/charcoal background */
+    color: #CCD6F6; /* Light gray text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for Sidebar and Content */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #112240; /* Slightly lighter dark blue background for sidebar */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-right: 20px;
+}
+
+.sidebar ul li a {
+    color: #64FFDA; /* Green accent color for links */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+    color: #A8DADC; /* Slightly lighter green on hover */
+}
+
+/* Add logo styles */
+.logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+/* Main Content Styles */
+main {
+    max-width: 1000px;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #112240; /* Match sidebar background */
+    overflow-y: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    color: #CCD6F6; /* Light gray for main content text */
+}
+
+main h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #CCD6F6; /* Light gray for headers */
+}
+
+main p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #8892B0; /* Slightly darker gray for paragraph text */
+}
+
+button, .cta-button {
+    background-color: transparent;
+    border: 2px solid #64FFDA; /* Green border for buttons */
+    padding: 10px 20px;
+    color: #64FFDA; /* Green text for buttons */
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover, .cta-button:hover {
+    background-color: #64FFDA; /* Green background on hover */
+    color: #0A192F; /* Dark text on hover */
+}
+
+/* Section and other elements */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 22px;
+    color: #A8DADC; /* Lighter gray for section headers */
+    margin-bottom: 15px;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background: #0A192F;
+    padding: 20px;
+    color: #CCD6F6;
+}

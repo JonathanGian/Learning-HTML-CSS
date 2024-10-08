@@ -1,0 +1,80 @@
+:root{
+    --bg-col: cornsilk;
+    --light-col: skyblue;
+    --highlight: salmon;
+    --dark: #333;
+    --font: "Oswald",sans-serif;
+    --gradient: linear-gradient(
+        to right top,
+        #051937,
+        #004d7a,
+        #008793,
+        #00bf72,
+        #a8eb12
+    );
+}
+
+body{
+    font-family: var(--font);
+    background: var(--gradient);
+    height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.circle {
+    height: 200px;
+    width: 200px;
+    background-color: var(--light-col);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    border-radius: 50%;
+    box-shadow: 2px 5px 5px var(--dark);
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+.text h1::after{
+    content: "";
+    height: 4px;
+    width: 0;
+    background-color: var(--highlight);
+    display: inherit;
+    transition: all 1s ease-in;
+}
+.text:hover h1::after{
+    width: 100%;
+    
+}
+
+@keyframes example{
+    0%{
+        top:0;
+        left:0;
+    }
+    25%{
+        top:0;
+        left: 300px;
+    }
+    50% {
+        top: 300px;
+        left: 300px;
+}
+    75%{
+        top: 300px;
+        left: 0px;
+    }
+
+    100%{
+        top: 0;
+        left: 0;
+    }
+}

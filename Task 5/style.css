@@ -1,0 +1,85 @@
+/* This gets rid of all the default settings of your html so you can better manipulate the website */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: burlywood;
+    font-family: "Raleway",Verdana, Geneva, Tahoma, sans-serif;/* You have to call the font in this way */
+}
+/* Link changes */
+a {
+    text-decoration: none;
+    color: coral;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+main{
+    margin: 50px auto;
+    width: 300px;
+}
+
+.form-wrap {
+    text-align: center;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.form-wrap h1,
+.form-wrap p {
+    margin-bottom: 20px;
+}
+
+label{
+    display: block;
+    text-align: left;
+    font-size: 10px;
+    color: rgb(60, 51, 51);
+    margin-bottom: 5px;
+}
+input {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid rgb(60, 51, 51);
+    border-radius: 5px;
+}
+
+button{ 
+    background: coral;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    width: 80%;
+}
+/* Changes the font size to 75% of the main text */
+#conditions {
+    font-size: 0.75em;
+
+}
+
+#footertext {
+    color: white;
+}
+/* Change Backgrounds */
+@media only screen and (max-width: 375px) {
+    
+    body{
+        background: purple;
+    }
+}
+@media only screen and (min-width: 376px) and (max-width: 768px)
+{
+    
+    body{
+        background: lightgreen;
+    }
+}
