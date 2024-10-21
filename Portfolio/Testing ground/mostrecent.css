@@ -26,15 +26,12 @@ html, body {
 /* Social Media Icons */
 .socials-container{
     justify-content: center;
+    width: 90%;
 }
 .social-icons {
     display: flex;
-    position: absolute;
-    bottom: 100px;
-    right: 100px;
     gap: 20px;
-   /*  padding-top: 10px;
-    margin-top: 10px; */
+    justify-content: flex-end;
 }
 
 .social-icon {
@@ -60,6 +57,7 @@ html, body {
 .social-icons a:hover {
     background-color: #64FFDA;
 }
+
 
 /* Wrapper */
 .wrapper {
@@ -391,6 +389,18 @@ footer {
         padding: 20px;
     }
     
+    /* Hero banner */
+   
+    .hero-banner{
+        visibility: hidden;
+    }
+    .hero-banner h1{
+        margin-top: 1rem;
+    }
+        .hero-banner h1, .hero-banner p {
+            visibility: visible;
+        }
+        
 /* Mobile Menu */
 .mobile{
     display: block;
