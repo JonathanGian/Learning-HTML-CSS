@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --h-font: "Mate SC",sans-serif;
+    --main-bckrnd-clr: #0A192F;
+    --scnd-bckrnd-clr: #112240;
+    --highlight-clr: #64FFDA;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    --nav-fontsize: 18px;
+    --font-clr: #ccd6f6;
+    --padding: 20px;
+}
+html{
+    font-family: var(--h-font);
+    color:var(--font-clr);
+    
+}
+main{
+    background-color: #112240;
+    height: 70vh;
+    
+}
+i
+
+/* Header  */
+header{
+    width: 100%;
+}
+/* Nav */
+nav {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--scnd-bckrnd-clr);
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+nav.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.mobile {
+    display: none;
+}
+.nav ul li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.nav ul li a {
+    color: #64FFDA;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav ul li a:hover {
+    color: white;
+}
+
+.logo {
+    height: 50px;
+}
+
+
+/* Footer Start*/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    padding: 0vw;
+    
+    text-align: center;
+    background-color: #112240;
+    
+}
+
+.form-wrap {
+    min-width: 60%;   
+    padding: 20px;
+}
+
+#contactform {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+label {
+    flex: 1;
+    text-align: center;
+}
+
+input, #message-input {
+    flex: 2;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccd6f6;
+    background-color: #0a192f;
+  
+}
+
+#message-input {
+    height: 5rem;
+}
+
+#submit-btn {
+    background: lightgreen;
+    color: black;
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    max-width: 150px;
+    margin-top: 1rem;
+}
+#submit-btn:hover{
+    background-color: #4caf50;
+}
